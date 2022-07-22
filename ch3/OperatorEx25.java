@@ -1,0 +1,24 @@
+import java.util.*;  // ScannerŬ������ ����ϱ� ���� �߰�
+
+class OperatorEx25 {
+	public static void main(String args[]) { 
+		Scanner scanner = new Scanner(System.in);
+		char ch = ' ';
+
+		System.out.printf("문자를 입력하세요.>");
+
+		String input = scanner.nextLine();
+		ch = input.charAt(0);
+
+		if('0'<= ch && ch <= '9') {
+			System.out.printf("입력하신 문자는 숫자입니다..\n");
+		}
+
+		else if(('a'<= ch && ch <= 'z') || ('A'<= ch && ch <= 'Z')) {
+			System.out.printf("입력하신 문자는 영문자입니다.\n");
+		}
+		else {
+			System.out.printf("잘못 입력하셨습니다.\n");
+		}
+	} // main
+}
