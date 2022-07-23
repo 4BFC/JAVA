@@ -5,24 +5,24 @@ class FlowEx8 {
 		char gender;
 		String regNo = "";
 
-		System.out.print("´ç½ÅÀÇ ÁÖ¹Î¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä.(011231-1111222)>");
+		System.out.print("ë‹¹ì‹ ì˜ ì£¼ë¯¼ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”.(011231-1111222)>");
 
 		Scanner scanner = new Scanner(System.in);
 		regNo = scanner.nextLine();
 
-		gender = regNo.charAt(7); // ÀÔ·Â¹ŞÀº ¹øÈ£ÀÇ 8¹øÂ° ¹®ÀÚ¸¦ gender¿¡ ÀúÀå
+		gender = regNo.charAt(7); //ì…ë ¥ë°›ì€ ë²ˆí˜¸ì˜ 8ë²ˆì§¸ ë¬¸ìë¥¼ genderì— ì €ì¥
 
 		switch(gender) {
 			case '1':
 			case '3':
-				System.out.println("´ç½ÅÀº ³²ÀÚÀÔ´Ï´Ù.");
+				System.out.println("ë‹¹ì‹ ì€ ë‚¨ìì…ë‹ˆë‹¤.");
 				break;
 			case '2':
 			case '4':
-				System.out.println("´ç½ÅÀº ¿©ÀÚÀÔ´Ï´Ù.");
+				System.out.println("ë‹¹ì‹ ì€ ì—¬ìì…ë‹ˆë‹¤.");
 				break;
 			default:
-				System.out.println("À¯È¿ÇÏÁö ¾ÊÀº ÁÖ¹Îµî·Ï¹øÈ£ÀÔ´Ï´Ù.");;
+				System.out.println("ìœ íš¨í•˜ì§€ ì•Šì€ ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ì…ë‹ˆë‹¤..");;
 		}
-	} // mainÀÇ ³¡
+	} 
 }

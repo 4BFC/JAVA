@@ -4,27 +4,27 @@ class FlowEx7 {
 	public static void main(String[] args) { 
 		int user, com;
 
-		System.out.print("°¡À§(1),¹ÙÀ§(2), º¸(3) Áß ÇÏ³ª¸¦ ÀÔ·ÂÇÏ¼¼¿ä.>");
+		System.out.print("ê°€ìœ„(1), ë°”ìœ„(2), ë³´(3) ì¤‘ í•˜ë‚˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.>");
 
 		Scanner scanner = new Scanner(System.in);
-		String tmp = scanner.nextLine(); // È­¸éÀ» ÅëÇØ ÀÔ·Â¹ŞÀº ³»¿ëÀ» tmp¿¡ ÀúÀå
-		user = Integer.parseInt(tmp);    // ÀÔ·Â¹ŞÀº ¹®ÀÚ¿­(tmp)¸¦ ¼ıÀÚ·Î º¯È¯
+		String tmp = scanner.nextLine(); 
+		user = Integer.parseInt(tmp);  
 
-		com = (int)(Math.random() * 3) + 1;  // 1,2,3Áß ÇÏ³ª°¡ com¿¡ ÀúÀåµÊ
+		com = (int)(Math.random() * 3) + 1;  
 
-		System.out.println("´ç½ÅÀº "+ user +"ÀÔ´Ï´Ù.");
-		System.out.println("ÄÄÀº  "+ com +"ÀÔ´Ï´Ù.");
+		System.out.println("ë‹¹ì‹ ì€ "+ user +"ì…ë‹ˆë‹¤.");
+		System.out.println("ì»´ì€  "+ com +"ì…ë‹ˆë‹¤.");
 
 		switch(user-com) {
 			case 2: case -1:
-				System.out.println("´ç½ÅÀÌ Á³½À´Ï´Ù.");
+				System.out.println("ë‹¹ì‹ ì´ ì¡ŒìŠµë‹ˆë‹¤.");
 				break;
 			case 1: case -2:
-				System.out.println("´ç½ÅÀÌ ÀÌ°å½À´Ï´Ù.");
+				System.out.println("ë‹¹ì‹ ì´ ì´ê²¼ìŠµë‹ˆë‹¤.");
 				break;
 			case 0:
-				System.out.println("ºñ°å½À´Ï´Ù.");
-	//			break;		// ¸¶Áö¸· ¹®ÀåÀÌ¹Ç·Î break¸¦ »ç¿ëÇÒ ÇÊ¿ä°¡ ¾ø´Ù. 
+				System.out.println("ë¹„ê²¼ìŠµë‹ˆë‹¤.");
+	//			break;		// ë§ˆì§€ë§‰ ë¬¸ì¥ì´ê¸°ì— breakë¬¸ì„ ì‚¬ìš©í•  í•„ìš”ê°€ ì—†ë‹¤.
 		}
-	} // mainÀÇ ³¡
+	} 
 }
