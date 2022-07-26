@@ -5,19 +5,19 @@ class FlowEx25 {
 		int num = 0; 
 		int sum = 0;
 
-		System.out.print("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.(¿¹:12345)>");
+		System.out.print("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”.(ì˜ˆ:12345)>");
 		Scanner scanner = new Scanner(System.in);
-		String tmp = scanner.nextLine(); // È­¸éÀ» ÅëÇØ ÀÔ·Â¹ŞÀº ³»¿ëÀ» tmp¿¡ ÀúÀå
-		num = Integer.parseInt(tmp);      // ÀÔ·Â¹ŞÀº ¹®ÀÚ¿­(tmp)À» ¼ıÀÚ·Î º¯È¯
+		String tmp = scanner.nextLine(); 
+		num = Integer.parseInt(tmp);      
 
 		while(num!=0) {    
-			// numÀ» 10À¸·Î ³ª´« ³ª¸ÓÁö¸¦ sum¿¡ ´õÇÔ
+			
 			sum += num%10; 	// sum = sum + num%10;
 			System.out.printf("sum=%3d num=%d%n", sum, num);
 
-			num /= 10;  // num = num / 10;  numÀ» 10À¸·Î ³ª´« °ªÀ» ´Ù½Ã num¿¡ ÀúÀå
+			num /= 10;  
 		}
 		
-		System.out.println("°¢ ÀÚ¸®¼öÀÇ ÇÕ:"+ sum);
+		System.out.println("ê° ìë¦¬ìˆ˜ì˜ í•©:"+ sum);
 	}
 }

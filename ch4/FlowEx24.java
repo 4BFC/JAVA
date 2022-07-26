@@ -2,13 +2,13 @@ class FlowEx24 {
 	public static void main(String[] args) { 
 		int i=11;
 
-		System.out.println("ÀÚ, ÀÌÁ¦ Ä«¿îÆ®´Ù¿îÀ» ½ÃÀÛÇÕ´Ï´Ù.");
+		System.out.println("ì¹´ìš´íŠ¸ ë‹¤ìš´ì„ ì‹œì‘í•©ë‹ˆë‹¤.");
 
 		while(i--!=0) {
 			System.out.println(i);
 
 			for(int j=0;j<2_000_000_000;j++) {
-					;
+					;//ìˆ˜í–‰ êµ¬ì¡°ëŠ” ì´í•´ê°€ ë˜ì§€ë§Œ ì˜ ì•ˆë¨..
 			}
 		}
 
