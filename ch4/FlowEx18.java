@@ -5,5 +5,5 @@ class FlowEx18 {
 				System.out.printf("%d x %d = %d%n", i, j, i*j);			
 			}
 		}
-	} // main¿« ≥°
+	} 
 }

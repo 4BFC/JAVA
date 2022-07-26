@@ -5,10 +5,10 @@ class FlowEx21 {
 				if(i==j) {
 					System.out.printf("[%d,%d]", i, j);			
 				} else {
-					System.out.printf("%5c", ' ');			
+					System.out.printf("%5c", ' ');//5Ïπ∏			
 				}
 			}
 			System.out.println();
 		}
-	} // main¿« ≥°
+	} 
 }

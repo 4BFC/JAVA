@@ -6,5 +6,5 @@ class FlowEx16 {
 			}
 			System.out.println();
 		}
-	} // main¿« ≥°
+	} // 
 }
