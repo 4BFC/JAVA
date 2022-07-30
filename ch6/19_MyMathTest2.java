@@ -1,14 +1,14 @@
 class MyMath2 {
 	long a, b;
 	
-	// ÀÎ½ºÅÏ½ºº¯¼ö a, b¸¸À» ÀÌ¿ëÇØ¼­ ÀÛ¾÷ÇÏ¹Ç·Î ¸Å°³º¯¼ö°¡ ÇÊ¿ä¾ø´Ù.
-	long add() 	    { return a + b; }  // a, b´Â ÀÎ½ºÅÏ½ºº¯¼ö
+	// ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ a, bë§Œì„ ì´ìš©í•´ì„œ ì‘ì—…í•˜ë¯€ë¡œ ë§¤ê°œë³€ìˆ˜ê°€ í•„ìš” ì—†ë‹¤.
+	long add() 	    { return a + b; }  // a, bëŠ” ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜
 	long subtract() { return a - b; }
 	long multiply() { return a * b; }
 	double divide() { return a / b; }
 
-	// ÀÎ½ºÅÏ½ºº¯¼ö¿Í °ü°è¾øÀÌ ¸Å°³º¯¼ö¸¸À¸·Î ÀÛ¾÷ÀÌ °¡´ÉÇÏ´Ù.
-	static long   add(long a, long b) 	   	 { return a + b; } // a, b´Â Áö¿ªº¯¼ö
+	// ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ì™€ ê´€ê³„ì—†ì´ ë§¤ê°œë³€ìˆ˜ë§Œìœ¼ë¡œ ì‘ì—…ì´ ê°€ëŠ¥í•˜ë‹¤.
+	static long   add(long a, long b) 	   	 { return a + b; } // a, bëŠ” ì§€ì—­ë³€ìˆ˜
 	static long   subtract(long a, long b)   { return a - b; }
 	static long   multiply(long a, long b)	 { return a * b; }
 	static double divide(double a, double b) { return a / b; }
@@ -16,16 +16,17 @@ class MyMath2 {
 
 class MyMathTest2 {
 	public static void main(String args[]) {
-		// Å¬·¡½º¸Ş¼­µå È£Ãâ. ÀÎ½ºÅÏ½º »ı¼º¾øÀÌ È£Ãâ°¡´É
+		// í´ë˜ìŠ¤ë©”ì„œë“œ í˜¸ì¶œ. ì¸ìŠ¤í„´ìŠ¤ ìƒì„±ì—†ì´ í˜¸ì¶œê°€ëŠ¥.
 		System.out.println(MyMath2.add(200L, 100L));
 		System.out.println(MyMath2.subtract(200L, 100L));
 		System.out.println(MyMath2.multiply(200L, 100L));
 		System.out.println(MyMath2.divide(200.0, 100.0));
 
-		MyMath2 mm = new MyMath2(); // ÀÎ½ºÅÏ½º¸¦ »ı¼º
+		MyMath2 mm = new MyMath2(); // ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±
 		mm.a = 200L;
 		mm.b = 100L;
-		// ÀÎ½ºÅÏ½º¸Ş¼­µå´Â °´Ã¼»ı¼º ÈÄ¿¡¸¸ È£ÃâÀÌ °¡´ÉÇÔ.
+		
+		// ì¸ìŠ¤í„°ã…ã„´ìŠ¤ë©”ì„œë“œëŠ” ê°ì²´ìƒì„± í›„ì—ë§Œ í˜¸ì¶œì´ ê°€ëŠ¥í•¨.
 		System.out.println(mm.add());
 		System.out.println(mm.subtract());
 		System.out.println(mm.multiply());
